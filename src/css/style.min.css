@@ -225,10 +225,10 @@ img {
 }
 
 .title--huge {
-  font-size: calc(45px + 25 * ((100vw - 320px) / 1120));
+  font-size: calc(42px + 28 * ((100vw - 320px) / 950));
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1270px) {
 
   .title--huge {
     font-size: 70px;
@@ -238,15 +238,15 @@ img {
 @media screen and (max-width: 320px) {
 
   .title--huge {
-    font-size: 45px;
+    font-size: 42px;
   }
 }
 
 .title--big {
-  font-size: calc(24px + 6 * ((100vw - 320px) / 1120));
+  font-size: calc(24px + 6 * ((100vw - 320px) / 950));
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1270px) {
 
   .title--big {
     font-size: 30px;
@@ -261,10 +261,10 @@ img {
 }
 
 .title--large {
-  font-size: calc(22px + 13 * ((100vw - 1024px) / 416));
+  font-size: calc(22px + 13 * ((100vw - 1024px) / 246));
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1270px) {
 
   .title--large {
     font-size: 35px;
@@ -279,10 +279,10 @@ img {
 }
 
 .title--medium {
-  font-size: calc(20px + 2 * ((100vw - 1024px) / 416));
+  font-size: calc(20px + 2 * ((100vw - 1024px) / 246));
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1270px) {
 
   .title--medium {
     font-size: 22px;
@@ -384,10 +384,10 @@ img {
 }
 
 .text--large {
-  font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
+  font-size: calc(18px + 2 * ((100vw - 320px) / 950));
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1270px) {
 
   .text--large {
     font-size: 20px;
@@ -402,10 +402,10 @@ img {
 }
 
 .text--normal {
-  font-size: calc(14px + 2 * ((100vw - 1024px) / 416));
+  font-size: calc(14px + 2 * ((100vw - 1024px) / 246));
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1270px) {
 
   .text--normal {
     font-size: 16px;
@@ -680,6 +680,10 @@ img {
 
 .main-screen__heading {
   max-width: 810px;
+}
+
+.main-screen__descr {
+  margin-top: 40px;
 }
 
 /* Why-us */
