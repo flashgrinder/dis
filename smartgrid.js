@@ -5,7 +5,7 @@ module.exports = {
 	offset: "30px",
 	container: {
 		maxWidth: "1270px",
-		fields: "30px"
+		fields: "15px"
 	},
 	breakPoints: {
 		large: {
