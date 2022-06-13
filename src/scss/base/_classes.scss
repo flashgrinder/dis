@@ -65,7 +65,7 @@
 }
 
 .block-padding {
-    padding: 75px 0;
+    padding: 120px 0;
 }
 
 /* Links */
@@ -125,7 +125,7 @@
         font-range: 320px 1440px;
     }
     &--big {
-        font-size: responsive 35px 45px;
+        font-size: responsive 24px 30px;
         font-range: 320px 1440px;
     }
     &--large {
@@ -160,6 +160,9 @@
     &--w-medium {
 		font-weight: 500;
 	}
+	&--w-semibold {
+		font-weight: 600;
+	}
 	&--w-bold {
 		font-weight: 700;
 	}
@@ -172,10 +175,16 @@
 	&--uppercase {
 		text-transform: uppercase;
 	}
+    &--gradient {
+        background-color: var(--color-dark-violet);
+        background-image: var(--color-accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .title--indent {
-    margin: 0 0 15px;
+    margin: 0 0 80px;
 }
 
 .title--indent-45 {
@@ -189,7 +198,10 @@
     font-style: normal;
     margin: 0;
 	&--black {
-		color: var(--color-dark); 
+		color: var(--color-black); 
+	}
+	&--light-gray {
+		color: var(--color-light-gray); 
 	}
 	&--white {
 		color: var(--color-white);

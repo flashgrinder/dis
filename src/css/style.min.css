@@ -68,6 +68,7 @@
 :root {
   --color-white: #FFFFFF;
   --color-black: #000;
+  --color-light-gray: #5A5F74;
   --color-dark: #241B2A;
   --color-dark-violet: #280047;
   --color-bg-primary: #1D1324;
@@ -153,7 +154,7 @@ img {
 }
 
 .block-padding {
-  padding: 75px 0;
+  padding: 120px 0;
 }
 
 /* Links */
@@ -242,20 +243,20 @@ img {
 }
 
 .title--big {
-  font-size: calc(35px + 10 * ((100vw - 320px) / 1120));
+  font-size: calc(24px + 6 * ((100vw - 320px) / 1120));
 }
 
 @media screen and (min-width: 1440px) {
 
   .title--big {
-    font-size: 45px;
+    font-size: 30px;
   }
 }
 
 @media screen and (max-width: 320px) {
 
   .title--big {
-    font-size: 35px;
+    font-size: 24px;
   }
 }
 
@@ -327,6 +328,10 @@ img {
   font-weight: 500;
 }
 
+.title--w-semibold {
+  font-weight: 600;
+}
+
 .title--w-bold {
   font-weight: 700;
 }
@@ -343,8 +348,15 @@ img {
   text-transform: uppercase;
 }
 
+.title--gradient {
+  background-color: var(--color-dark-violet);
+  background-image: var(--color-accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .title--indent {
-  margin: 0 0 15px;
+  margin: 0 0 80px;
 }
 
 .title--indent-45 {
@@ -360,7 +372,11 @@ img {
 }
 
 .text--black {
-  color: var(--color-dark);
+  color: var(--color-black);
+}
+
+.text--light-gray {
+  color: var(--color-light-gray);
 }
 
 .text--white {
@@ -449,7 +465,7 @@ img {
   margin: 0;
   font-family: var(--font-raleway);
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.5;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -664,6 +680,57 @@ img {
 
 .main-screen__heading {
   max-width: 810px;
+}
+
+/* Why-us */
+
+.why-us {
+  background: url("../img/why-us-decor.png") no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+.why-us__inner {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, auto));
+  grid-gap: 65px;
+  align-items: stretch;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.why-us__title {
+  margin-bottom: 40px;
+}
+
+.why-us__features {
+  position: relative;
+  padding: 71px 55px 63px;
+  border-radius: 20px;
+}
+
+.why-us__features-decor {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+}
+
+.why-us__features-svg {
+  display: block;
+}
+
+.why-us__point {
+  display: inline-flex;
+  align-items: center;
+}
+
+.why-us__point ~ .why-us__point {
+  margin-top: 40px;
+}
+
+.why-us__descr-point {
+  margin-left: 25px;
 }
 
 /* MEDIA QUERIES */

@@ -1,0 +1,46 @@
+.why-us {
+    background: url('../img/why-us-decor.png') no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+
+.why-us__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(440px, auto));
+    grid-gap: 65px;
+    align-items: stretch;
+    grid-template-rows: 1fr;
+}
+
+.why-us__title {
+    margin-bottom: 40px;
+}
+
+.why-us__features {
+    position: relative;
+    padding: 71px 55px 63px;
+    border-radius: 20px;
+}
+
+.why-us__features-decor {
+    position: absolute;
+    top: -40px;
+    right: 30px;
+}
+
+.why-us__features-svg {
+    display: block;
+}
+
+.why-us__point {
+    display: inline-flex;
+    align-items: center;
+}
+
+.why-us__point ~ .why-us__point {
+    margin-top: 40px;
+}
+
+.why-us__descr-point {
+    margin-left: 25px;
+}
