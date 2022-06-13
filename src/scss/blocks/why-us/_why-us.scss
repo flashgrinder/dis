@@ -10,16 +10,21 @@
     grid-gap: 65px;
     align-items: stretch;
     grid-template-rows: 1fr;
+    @include mobileXS-block {
+        grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    }
 }
 
 .why-us__title {
     margin-bottom: 40px;
+    @include tablet(margin-bottom, 20px);
 }
 
 .why-us__features {
     position: relative;
     padding: 71px 55px 63px;
     border-radius: 20px;
+    @include mobileXS(padding, 80px 31px 60px);
 }
 
 .why-us__features-decor {
@@ -43,4 +48,30 @@
 
 .why-us__descr-point {
     margin-left: 25px;
+}
+
+.why-us__logos {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tablet-block {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+.why-us__logos::-webkit-scrollbar {
+    @include tablet-block {
+        width: 0;
+        height: 0;
+    }
+}
+
+.why-us__logo {
+    display: block;
+}
+
+.why-us__logo ~ .why-us__logo {
+    margin-left: 6.5em;
 }
