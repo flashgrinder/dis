@@ -47,6 +47,18 @@
 
 @font-face {
 	font-family: 'Raleway';
+	src: url('../fonts/Raleway/Raleway-SemiBold.eot');
+	src: url('../fonts/Raleway/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Raleway/Raleway-SemiBold.woff2') format('woff2'),
+	url('../fonts/Raleway/Raleway-SemiBold.woff') format('woff'),
+	url('../fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Raleway';
 	src: url('../fonts/Raleway/Raleway-Bold.eot');
 	src: url('../fonts/Raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
 	url('../fonts/Raleway/Raleway-Bold.woff2') format('woff2'),

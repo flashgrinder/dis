@@ -1,0 +1,23 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 35px;
+    border-bottom: 1px solid var(--color-white);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.header__action {
+    display: inline-flex;
+    margin-left: 40px;
+}
