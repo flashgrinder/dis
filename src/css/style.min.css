@@ -812,7 +812,7 @@ img {
   }
 
   .why-us__inner {
-    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
   }
 
   .why-us__features {

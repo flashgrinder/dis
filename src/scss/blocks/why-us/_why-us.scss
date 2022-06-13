@@ -11,7 +11,7 @@
     align-items: stretch;
     grid-template-rows: 1fr;
     @include mobileXS-block {
-        grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     }
 }
 
