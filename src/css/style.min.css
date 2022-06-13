@@ -752,6 +752,38 @@ img {
   margin-left: 6.5em;
 }
 
+/* Products */
+
+.products {
+  background: url("../img/products-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.products__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-gap: 40px;
+  align-items: stretch;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.products__item {
+  padding: 40px;
+  border-radius: 20px;
+  min-height: 450px;
+  height: 100%;
+}
+
+.products__title {
+  margin-top: 40px;
+}
+
+.products__descr {
+  margin-top: 20px;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
