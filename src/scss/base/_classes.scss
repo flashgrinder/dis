@@ -8,18 +8,25 @@
 	@include wrapper-full();
 }
 
+/* Debug */
+
+.debug {
+    @include debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+    z-index: 99999;
+}
+
 /* Hide */
 
 .hide {
     display: none !important;
 }
 
-.hide-medium {
-	@include medium(display, none !important);
-}
-
 .hide-tablet {
 	@include tablet(display, none !important);
+}
+
+.hide-tabletSM {
+	@include tabletSM(display, none !important);
 }
 
 .hide-mobile {
@@ -49,36 +56,88 @@
     &--dark {
         background-color: var(--color-dark);
     }
+    &--primary {
+        background-color: var(--color-bg-primary);
+    }
+    &--dark-blue {
+        background-color: var(--color-dark-blue);
+    }
+}
+
+.block-padding {
+    padding: 75px 0;
 }
 
 /* Links */
 
-.link {
+.link-secondary {
+    display: inline-block;
+    font-size: responsive 14px 16px;
+    font-range: 1024px 1440px;
+    font-weight: 300;
+    color: var(--color-accent-secondary);
     text-decoration: none;
-    transition: ease .3s;
+    transition: color ease-out .150s, fill ease-out .150s;
+    border: 1px solid transparent;
+    padding: 4px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
-.link:hover {
-    color: var(--color-orange);
+.link-secondary__arrow-secondary {
+    display: block;
+    fill: var(--color-accent-secondary);
+    transition: fill ease-out .150s, transform ease-out .150s;
+    margin-left: 10px;
+}
+
+.link-secondary:hover,
+.link-secondary:focus,
+.link-secondary:active {
+    color: var(--color-white);
+}
+
+.link-secondary:target,
+.link-secondary:focus {
+    border: 1px solid var(--color-blue);
+}
+
+.link-secondary:disabled {
+    opacity: .45;
+}
+
+.link-secondary:hover .link-secondary__arrow-secondary,
+.link-secondary:focus .link-secondary__arrow-secondary,
+.link-secondary:active .link-secondary__arrow-secondary {
+    fill: var(--color-white);
+    transform: translateX(5px);
 }
 
 /* Title */
 
 .title {
-    font-family: var(--font-gotham);
+    font-family: var(--font-raleway);
     font-style: normal;
     margin: 0;
+    &--huge {
+        font-size: responsive 45px 70px;
+        font-range: 320px 1440px;
+    }
     &--big {
-        font-size: responsive 16px 45px;
+        font-size: responsive 35px 45px;
         font-range: 320px 1440px;
     }
     &--large {
-        font-size: responsive 20px 26px;
+        font-size: responsive 22px 35px;
         font-range: 1024px 1440px;
     }
     &--medium {
-        font-size: responsive 18px 22px;
+        font-size: responsive 20px 22px;
         font-range: 1024px 1440px;
+    }
+    &--pre-medium {
+        font-size: 18px;
     }
     &--small {
         font-size: 16px;
@@ -86,29 +145,29 @@
     &--tiny {
         font-size: 12px;
     }
-    &--orange {
-        color: var(--color-orange);
-    }
     &--white {
         color: var(--color-white);
 	}
-    &--black-gray {
-		color: var(--color-black-gray); 
+    &--dark {
+		color: var(--color-violet); 
 	}
 	&--w-light {
 		font-weight: 300;
     }
-    &--w-normal {
-		font-weight: 400;
+    &--w-regular {
+		font-weight: normal;
 	}
     &--w-medium {
 		font-weight: 500;
 	}
 	&--w-bold {
-		font-weight: bold;
+		font-weight: 700;
 	}
 	&--w-black {
 		font-weight: 900;
+	}
+	&--italic {
+		font-style: italic;
 	}
 	&--uppercase {
 		text-transform: uppercase;
@@ -116,43 +175,38 @@
 }
 
 .title--indent {
-    margin: 0 0 30px 50px;
-    @include tablet(margin, 0 0 20px 15px);
-    @include mobile(margin, 0 0 20px 0);
+    margin: 0 0 15px;
+}
+
+.title--indent-45 {
+    margin: 0 0 45px;
 }
 
 /* Text */
 
 .text {
-    font-family: var(--font-roboto);
+    font-family: var(--font-raleway);
     font-style: normal;
     margin: 0;
-	&--black-gray {
-		color: var(--color-black-gray); 
-	}
-	&--orange {
-		color: var(--color-orange);
+	&--black {
+		color: var(--color-dark); 
 	}
 	&--white {
 		color: var(--color-white);
 	}
-	&--big {
-        font-size: responsive 20px 30px;
-        font-range: 320px 1440px;
-	}
 	&--large {
-        font-size: responsive 14px 22px;
+        font-size: responsive 18px 20px;
         font-range: 320px 1440px;
 	}
 	&--normal {
-        font-size: responsive 12px 16px;
+        font-size: responsive 14px 16px;
         font-range: 1024px 1440px;
 	}
 	&--small {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	&--tiny {
-		font-size: 10px;
+		font-size: 12px;
 	}
 	&--w-light {
 		font-weight: 300;
@@ -168,9 +222,6 @@
     }
 	&--w-black {
 		font-weight: 900;
-    }
-    &--italic {
-        font-style: italic;
     }
     &--uppercase {
 		text-transform: uppercase;
