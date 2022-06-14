@@ -796,6 +796,39 @@ img {
   margin-top: 20px;
 }
 
+/* Documentation */
+
+.documentation__item {
+  padding: 20px;
+  border: 2px solid var(--color-dark-violet);
+  border-radius: 20px;
+}
+
+.documentation__item ~ .documentation__item {
+  margin-top: 60px;
+}
+
+.documentation__title {
+  margin-bottom: 20px;
+}
+
+.documentation__descr + .documentation__title {
+  margin-top: 30px;
+}
+
+.documentation__files {
+  display: block;
+  text-decoration: none;
+}
+
+.documentation__files:hover {
+  text-decoration: underline;
+}
+
+.documentation__files ~ .documentation__files {
+  margin-top: 20px;
+}
+
 /* Feedback */
 
 .feedback__descr {
