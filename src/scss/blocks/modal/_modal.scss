@@ -1,0 +1,254 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    background-color: transparent;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px);
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition:  visibility .3s ease-in-out, opacity .3s ease-in-out;
+    transition-delay: .3s;
+    position: fixed;
+}
+
+.modal.hystmodal--active {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    transition-delay: 0s;
+}
+
+.modal__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    max-width: 555px;
+    width: 100%;
+    padding: 50px 35px 28px;
+    overflow-x: hidden;
+    border-radius: 10px;
+    margin-top: 90px;
+    @include mobileXS-block {
+        padding: 16px 15px 30px;
+        max-width: 100%;
+    }
+}
+
+.modal__close {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.modal__close-svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--color-black);
+    stroke: var(--color-black);
+}
+
+.modal__title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.modal__form {
+    font-family: var(--font-raleway);
+    width: 100%;
+    max-width: 555px;
+    margin: 0 auto;
+}
+
+.modal__field ~ .modal__field {
+    margin-top: 30px;
+}
+
+.modal__field-text {
+    margin-bottom: 25px;
+}
+
+.modal__input {
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 17px;
+    width: 100%;
+    padding: 15px;
+    background: rgba(141, 141, 141, 0.1);
+    border: 1px solid rgba(18,18,18,.1);
+    color: var(--color-dark);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+}
+
+.modal__input:focus,
+.modal__input:target,
+.modal__input:active {
+    outline: 1px solid var(--color-dark-violet);
+    border: 1px solid var(--color-dark-violet);
+}
+
+.modal__input::placeholder {
+    color: var(--color-light-gray);
+}
+
+.modal__actions {
+    position: relative;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.modal__actions .wpcf7-spinner {
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    transform: translateY(-50%);
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+    @include mobileXS-block {
+        margin: 0 10px;
+    }
+    @include mobileXSS-block {
+        margin: 0 4px;
+    }
+}
+
+.modal__actions .wpcf7-spinner:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border: 3px solid var(--color-dark-violet);
+    border-top: 3px solid #595959;
+    transform-origin: center;
+    animation: rotate 1s infinite linear backwards;
+}
+
+.modal .wpcf7 form .wpcf7-response-output {
+    font-family: var(--font-raleway);
+    font-size: responsive 14px 16px;
+    font-range: 768px 1024px;
+    margin: 20px 0 0;
+    padding: 15px 1em;
+    border: 2px solid var(--color-yellow);
+    color: var(--color-white);
+    border-radius: 10px;
+}
+
+.modal .wpcf7 form.invalid .wpcf7-response-output, 
+.modal .wpcf7 form.unaccepted .wpcf7-response-output {
+    border: 1px solid var(--color-yellow);
+}
+
+.modal .wpcf7 form.sent .wpcf7-response-output {
+    border-color: var(--color--green-light);
+}
+
+.modal__form .wpcf7-not-valid-tip {
+    text-align: center;
+    font-family: var(--font-raleway);
+    font-size: 12px;
+    margin-top: 5px;
+    color: var(--color-invalid);
+    position: absolute;
+    width: 100%;
+    bottom: -37px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal__agree-text {
+    margin-top: 18px;
+}
+  
+.modal__agree-text .wpcf7-acceptance .wpcf7-list-item {
+    font-family: var(--font-roboto);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-black);
+    text-decoration: none;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+  
+.modal__agree-text .wpcf7-acceptance .wpcf7-list-item:hover {
+    text-decoration: underline;
+}
+  
+.modal__agree-text .wpcf7-acceptance label {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+  
+.form__checkbox--agree {
+    margin-right: 25px;
+    position: relative;
+    z-index: -1;
+    opacity: 0;
+}
+  
+.modal__agree-text .wpcf7-acceptance label > span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+}
+  
+.modal__agree-text .modal__agree-text .wpcf7-acceptance label > span:hover::before {
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+  
+.modal__agree-text .wpcf7-acceptance label > .form__checkbox--agree:focus + span::before {
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+  
+.modal__agree-text .wpcf7-acceptance label > .form__checkbox--agree:focus:not(:checked) + span::before {
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+  
+.modal__agree-text .wpcf7-acceptance label > .form__checkbox--agree:disabled + span::before {
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+  
+.modal__agree-text .wpcf7-acceptance label > .form__checkbox--agree:checked + span::before {
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeTE9Ii0xIiB4Mj0iOS4zMTc3NiIgeTI9Ii0xIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjcxMTI3MSAwLjcwMjkxOCAtMC43MTEyNzEgMC43MDI5MTggMCA1LjI3NDkpIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4KPGxpbmUgeTE9Ii0xIiB4Mj0iMTMuOTc2NiIgeTI9Ii0xIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjcxMTI3MSAtMC43MDI5MTggMC43MTEyNzEgMC43MDI5MTggNi42MjY5NSAxMS44MjQ1KSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=");
+}

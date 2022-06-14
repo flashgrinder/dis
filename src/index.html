@@ -32,6 +32,66 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal hystmodal" id="modal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="modal__body hystmodal__window" role="modal window contact" aria-modal="true">
+                <div class="modal__close" data-hystclose>
+                    <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3 class="modal__title modal__field--anim title title--big title--black title--w-medium center">
+
+                Обратная связь
+
+            </h3>
+                <form action="" class="modal__form wpcf7-form">
+                    <div class="modal__field">
+                        <input type="text" class="modal__input" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__field">
+                        <input type="tel" class="modal__input" placeholder="Номер телефона">
+                    </div>
+                    <div class="modal__field">
+                        <input type="email" class="modal__input" placeholder="Email">
+                    </div>
+                    <div class="modal__field">
+                        <input type="text" class="modal__input" placeholder="Компания">
+                    </div>
+                    <div class="modal__field">
+                        <textarea class="modal__input modal__input--textarea" cols="40" row="10" placeholder="Сообщение"></textarea>
+                    </div>
+                    <div class="modal__agree-text">
+                        <span class="wpcf7-form-control-wrap acceptance-666">
+
+                        <span class="wpcf7-form-control wpcf7-acceptance">
+
+                            <span class="wpcf7-list-item">
+
+                                <label>
+
+                                    <input type="checkbox" name="acceptance-666" value="1" aria-invalid="false" class="form__checkbox form__checkbox--agree">
+
+                                    <span class="wpcf7-list-item-label">
+
+                                        Даю согласие на обработку персональных данных
+
+                                    </span>
+                        </label>
+                        </span>
+                        </span>
+                        </span>
+                    </div>
+                    <div class="modal__actions">
+                        <input type="button" value="Отправить" class="modal__btn button button--secondary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /. Modal -->
+    <!-- Header -->
     <header class="header">
         <div class="header__body container">
             <a href="./" class="header__logo logo">
@@ -71,7 +131,7 @@
                     </ul>
                 </nav>
                 <div class="header__action">
-                    <a href="#" class="header__button button button--primary button--small">
+                    <a href="javascript:;" class="header__button button button--primary button--small" data-modal="#modal">
 
                     Запросить демо
 
@@ -80,6 +140,7 @@
             </div>
         </div>
     </header>
+    <!-- /. Header -->
 
     <!-- MAIN -->
     <main class="main page__container">
@@ -280,9 +341,19 @@
             </a>
                     <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
 
-                Руководство пользователя Plus7 MayaK (cкачать) PDF
+                Руководство пользователя Plus7 MayaK (cкачать) - PDF
 
             </a>
+                    <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
+
+                Требования к ПО Plus7 MayaK (cкачать) - PDF
+
+            </a>
+                    <div class="documentation__info text text--large text--black text--w-medium">
+                        Сведения о стоимости ПО:
+                        <br>Стоимость ПО рассчитывается индивидуально. Запрос на расчёт стоимости можно отправить по адресу:
+                        <br> <a href="mailto:info@data-innovations.ru" class="documentation__mailto">info@data-innovations.ru</a>
+                    </div>
                 </div>
                 <div class="documentation__item">
                     <h3 class="documentation__title title title--big title--black title--w-semibold">
@@ -306,9 +377,19 @@
             </a>
                     <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
 
-                Руководство пользователя Plus7 FormIT (cкачать) PDF
+                Руководство пользователя Plus7 FormIT (cкачать) - PDF
 
             </a>
+                    <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
+
+                Требования к ПО Plus7 FormIT (cкачать) - PDF
+
+            </a>
+                    <div class="documentation__info text text--large text--black text--w-medium">
+                        Сведения о стоимости ПО:
+                        <br>Стоимость ПО рассчитывается индивидуально. Запрос на расчёт стоимости можно отправить по адресу:
+                        <br> <a href="mailto:info@data-innovations.ru" class="documentation__mailto">info@data-innovations.ru</a>
+                    </div>
                 </div>
                 <div class="documentation__item">
                     <h3 class="documentation__title title title--big title--black title--w-semibold">
@@ -332,9 +413,19 @@
             </a>
                     <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
 
-                Руководство пользователя Plus7 Forsage Platform (cкачать) PDF
+                Руководство пользователя Plus7 Forsage Platform (cкачать) - PDF
 
             </a>
+                    <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
+
+                Требования к ПО Plus7 Forsage Platform (cкачать) - PDF
+
+            </a>
+                    <div class="documentation__info text text--large text--black text--w-medium">
+                        Сведения о стоимости ПО:
+                        <br>Стоимость ПО рассчитывается индивидуально. Запрос на расчёт стоимости можно отправить по адресу:
+                        <br> <a href="mailto:info@data-innovations.ru" class="documentation__mailto">info@data-innovations.ru</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -352,12 +443,12 @@
                     Получите дополнительную информацию о решениях или запросите демо
                 </p>
                 <div class="feedback__actions">
-                    <a href="#" class="feedback__button button button--secondary">
+                    <a href="javascript:;" class="feedback__button button button--secondary" data-modal="#modal">
 
                 Связаться с нами
 
             </a>
-                    <a href="#" class="feedback__button button button--primary">
+                    <a href="javascript:;" class="feedback__button button button--primary" data-modal="#modal">
 
                 Запросить демо
 
