@@ -122,3 +122,9 @@
 .button--small:hover {
     border: 1px solid var(--color-white);
 }
+
+.button--small:hover,
+.button--small:focus,
+.button--small:target {
+    border: 1px solid var(--color-dark-violet);
+}
