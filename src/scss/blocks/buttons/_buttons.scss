@@ -62,7 +62,6 @@
 
 /* Button secondary */
 .button--secondary {
-    // padding: 15px 35px;
     border: 2px solid var(--color-dark-violet);
     color: var(--color-white);
     background: var(--color-accent-gradient);
@@ -106,7 +105,7 @@
 
 .button--secondary:active {
     color: var(--color-dark-violet);
-    border: 2px solid var(--color-accent-secondary);
+    border: 2px solid var(--color-dark-violet);
     background: var(--color-accent-secondary);
 }
 

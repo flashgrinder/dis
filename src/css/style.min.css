@@ -663,7 +663,7 @@ img {
 
 .button--secondary:active {
   color: var(--color-dark-violet);
-  border: 2px solid var(--color-accent-secondary);
+  border: 2px solid var(--color-dark-violet);
   background: var(--color-accent-secondary);
 }
 
