@@ -118,8 +118,24 @@
     text-align: center;
 }
 
-.modal__btn.button {
+.modal__btn.button--secondary {
     padding: 15px 64px;
+}
+
+.modal__btn.button--secondary:hover {
+    color: var(--color-dark-violet);
+}
+
+.modal__btn.button--secondary:target {
+    color: var(--color-white);
+}
+
+.modal__btn.button--secondary:focus {
+    color: var(--color-white);
+}
+
+.modal__btn.button--secondary:active {
+    color: var(--color-dark-violet);
 }
 
 .modal__actions .wpcf7-spinner {
