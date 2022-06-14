@@ -1,0 +1,19 @@
+.feedback__descr {
+    margin-top: 20px;
+}
+
+.feedback__actions {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobileXS(flex-direction, column);
+}
+
+.feedback__button ~ .feedback__button {
+    margin-left: 20px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
