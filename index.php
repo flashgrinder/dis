@@ -92,7 +92,7 @@
                 Наши продукты
             </h2>
             <div class="products__grid">
-                <div class="products__item bg--white">
+                <div class="products__item bg--white hide">
                     <div class="products__icon">
                         <svg class="product__svg-icon" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="45" cy="45" r="45" fill="#F0EAF5" />
@@ -107,7 +107,7 @@
                         Решение по управлению портфелем проектов, нацеленное на увеличение скорости и повышение эффективности принятия решений
                     </p>
                 </div>
-                <div class="products__item bg--white hide">
+                <div class="products__item bg--white">
                     <div class="products__icon">
                         <svg class="product__svg-icon" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="45" cy="45" r="45" fill="#F0EAF5" />
