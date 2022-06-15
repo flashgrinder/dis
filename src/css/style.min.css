@@ -1171,8 +1171,9 @@ img {
 .products__grid {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0.33fr));
   grid-gap: 40px;
+  justify-content: center;
   align-items: stretch;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
@@ -1308,6 +1309,10 @@ img {
   .why-us__logos::-webkit-scrollbar {
     width: 0;
     height: 0;
+  }
+
+  .products__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   }
 }
 

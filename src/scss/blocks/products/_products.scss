@@ -5,10 +5,12 @@
 
 .products__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.33fr));
     grid-gap: 40px;
+    justify-content: center;
     align-items: stretch;
     grid-template-rows: 1fr;
+    @include tablet(grid-template-columns, repeat(auto-fit, minmax(250px, auto)));
 }
 
 .products__item {
