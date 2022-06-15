@@ -1,6 +1,7 @@
 <?php
 
     define('STANDART_DIR', get_stylesheet_directory_uri() . '/assets/');
+    define('ROOT_DIR', get_stylesheet_directory_uri());
 
     // Отключаем админбар
     if ( ! current_user_can( 'manage_options' ) ) {

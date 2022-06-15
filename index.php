@@ -107,7 +107,7 @@
                         Решение по управлению портфелем проектов, нацеленное на увеличение скорости и повышение эффективности принятия решений
                     </p>
                 </div>
-                <div class="products__item bg--white">
+                <div class="products__item bg--white hide">
                     <div class="products__icon">
                         <svg class="product__svg-icon" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="45" cy="45" r="45" fill="#F0EAF5" />
@@ -122,7 +122,7 @@
                         Российская система управления знаниями
                     </p>
                 </div>
-                <div class="products__item bg--white">
+                <div class="products__item bg--white hide">
                     <div class="products__icon">
                         <svg class="product__svg-icon" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="45" cy="45" r="45" fill="#F0EAF5" />
@@ -159,13 +159,13 @@
                 <h3 class="documentation__title title title--big title--black title--w-semibold">
                     Документация о продукте Plus7 MayaK
                 </h3>
-                <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
+                <a href="<?php echo ROOT_DIR; ?>/upload/Функциональные характеристики_Plus7_MayaK.pdf" class="documentation__files text text--large text--black text--w-medium" download>
                     Функциональные характеристики Plus7 MayaK (скачать) - PDF
                 </a>
-                <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
+                <a href="<?php echo ROOT_DIR; ?>/upload/Руководство конечного пользователя_ Plus7_MayaK_2022.pdf" class="documentation__files text text--large text--black text--w-medium" download>
                     Руководство пользователя Plus7 MayaK (cкачать) - PDF
                 </a>
-                <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
+                <a href="<?php echo ROOT_DIR; ?>/upload/Требования к ПО_Plus7_MayaK.pdf" class="documentation__files text text--large text--black text--w-medium" download>
                     Требования к ПО Plus7 MayaK (cкачать) - PDF
                 </a>
                 <div class="documentation__info text text--large text--black text--w-medium">
@@ -174,39 +174,12 @@
                     <br> <a href="mailto:info@data-innovations.ru" class="documentation__mailto">info@data-innovations.ru</a>
                 </div>
             </div>
-            <div class="documentation__item">
-                <h3 class="documentation__title title title--big title--black title--w-semibold">
-                    Plus7 FormI
-                </h3>
-                <p class="documentation__descr text text--large text--light-gray text--w-medium">
-                    Омниканальное решение по персонализации документов, промышленной интеграции данных, позволяющее заменить корпоративные ETL-платформы, интегрировать корпоративные информационные системы, а также любые другие источники данных, включая файлы, веб-формы,
-                    электронную почту и другие сервисы.
-                </p>
-                <h3 class="documentation__title title title--big title--black title--w-semibold">
-                    Документация о продукте Plus7 FormI
-                </h3>
-                <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
-                    Функциональные характеристики Plus7 FormIT (скачать) - PDF
-                </a>
-                <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
-                    Руководство пользователя Plus7 FormIT (cкачать) - PDF
-                </a>
-                <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
-                    Требования к ПО Plus7 FormIT (cкачать) - PDF
-                </a>
-                <div class="documentation__info text text--large text--black text--w-medium">
-                    Сведения о стоимости ПО:
-                    <br>Стоимость ПО рассчитывается индивидуально. Запрос на расчёт стоимости можно отправить по адресу:
-                    <br> <a href="mailto:info@data-innovations.ru" class="documentation__mailto">info@data-innovations.ru</a>
-                </div>
-            </div>
-            <div class="documentation__item">
+            <div class="documentation__item hide">
                 <h3 class="documentation__title title title--big title--black title--w-semibold">
                     Plus7 Forsage Platform
                 </h3>
                 <p class="documentation__descr text text--large text--light-gray text--w-medium">
-                    Plus7 Forsage Platform — система управления знаниями, нацеленная на повышение эффективности внешних коммуникаций и внутрикорпоративных взаимодействий. В основе системы лежит постоянно обновляемая база информации и развитые интерфейсы интеграции с внешними
-                    системами, включая CRM, телефонию, корпоративный веб-сайт, чат-боты и др.
+                    Plus7 Forsage Platform — low-code платформа, основа продуктов для автоматизации процессов компании. Plus7 Forsage Platform представляет собой комплекс программных компонентов, работающий по принципу конструктора. Простое и быстрое конфигурирование компонентов позволяет упростить запуски различных процессов силами бизнес-пользователя или технического специалиста.
                 </p>
                 <h3 class="documentation__title title title--big title--black title--w-semibold">
                     Документация о продукте Plus7 Forsage Platform
@@ -219,6 +192,32 @@
                 </a>
                 <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
                     Требования к ПО Plus7 Forsage Platform (cкачать) - PDF
+                </a>
+                <div class="documentation__info text text--large text--black text--w-medium">
+                    Сведения о стоимости ПО:
+                    <br>Стоимость ПО рассчитывается индивидуально. Запрос на расчёт стоимости можно отправить по адресу:
+                    <br> <a href="mailto:info@data-innovations.ru" class="documentation__mailto">info@data-innovations.ru</a>
+                </div>
+            </div>
+            <div class="documentation__item hide">
+                <h3 class="documentation__title title title--big title--black title--w-semibold">
+                    Plus7 FormIT
+                </h3>
+                <p class="documentation__descr text text--large text--light-gray text--w-medium">
+                    Омниканальное решение по персонализации документов, промышленной интеграции данных, позволяющее заменить корпоративные ETL-платформы, интегрировать корпоративные информационные системы, а также любые другие источники данных, включая файлы, веб-формы,
+                    электронную почту и другие сервисы.
+                </p>
+                <h3 class="documentation__title title title--big title--black title--w-semibold">
+                    Документация о продукте Plus7 FormIT
+                </h3>
+                <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
+                    Функциональные характеристики Plus7 FormIT (скачать) - PDF
+                </a>
+                <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
+                    Руководство пользователя Plus7 FormIT (cкачать) - PDF
+                </a>
+                <a href="#" class="documentation__files text text--large text--black text--w-medium" download>
+                    Требования к ПО Plus7 FormIT (cкачать) - PDF
                 </a>
                 <div class="documentation__info text text--large text--black text--w-medium">
                     Сведения о стоимости ПО:

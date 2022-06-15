@@ -7,7 +7,7 @@
                 <a href="mailto:info@data-innovations.ru" class="footer__mail text text--normal text--white text--w-regular">
                     info@data-innovations.ru
                 </a>
-                <a href="tel:+74956450201" class="footer__tel text text--normal text--white text--w-regular">
+                <a href="tel:+74956450201" class="footer__tel text text--normal text--white text--w-regular hide">
                     +7 (495) 645-02-01
                 </a>
             </div>
