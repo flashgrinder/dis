@@ -92,7 +92,7 @@
                 Наши продукты
             </h2>
             <div class="products__grid">
-                <div class="products__item bg--white hide">
+                <div class="products__item bg--white">
                     <div class="products__icon">
                         <svg class="product__svg-icon" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="45" cy="45" r="45" fill="#F0EAF5" />
@@ -104,7 +104,7 @@
                         Plus7 Forsage Platform
                     </h3>
                     <p class="products__descr text text--large text--light-gray text--w-medium">
-                        Решение по управлению портфелем проектов, нацеленное на увеличение скорости и повышение эффективности принятия решений
+                        Low-code платформа для автоматизации бизнес-процессов
                     </p>
                 </div>
                 <div class="products__item bg--white">
@@ -119,10 +119,10 @@
                         Plus7 MayaK
                     </h3>
                     <p class="products__descr text text--large text--light-gray text--w-medium">
-                        Российская система управления знаниями
+                        Система управления знаниями
                     </p>
                 </div>
-                <div class="products__item bg--white hide">
+                <div class="products__item bg--white">
                     <div class="products__icon">
                         <svg class="product__svg-icon" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="45" cy="45" r="45" fill="#F0EAF5" />
@@ -134,7 +134,7 @@
                         Plus7 FormIT
                     </h3>
                     <p class="products__descr text text--large text--light-gray text--w-medium">
-                        Омниканальное решение по интеграции данных
+                        Решение по интеграции данных и документообороту
                     </p>
                 </div>
             </div>
@@ -153,8 +153,7 @@
                     Plus7 Mayak
                 </h3>
                 <p class="documentation__descr text text--large text--light-gray text--w-medium">
-                    Plus7 Mayak — система управления знаниями, нацеленная на повышение эффективности внешних коммуникаций и внутрикорпоративных взаимодействий. В основе системы лежит постоянно обновляемая база информации и развитые интерфейсы интеграции с внешними системами,
-                    включая CRM, телефонию, корпоративный веб-сайт, чат-боты и др.
+                    Plus7 Mayak — система управления знаниями, нацеленная на повышение эффективности внешних коммуникаций и внутрикорпоративных взаимодействий. В основе системы лежит постоянно обновляемая база информации и развитые интерфейсы интеграции с внешними системами, включая CRM, телефонию, корпоративный веб-сайт, чат-боты и др.
                 </p>
                 <h3 class="documentation__title title title--big title--black title--w-semibold">
                     Документация о продукте Plus7 MayaK
@@ -165,8 +164,8 @@
                 <a href="<?php echo ROOT_DIR; ?>/upload/Руководство конечного пользователя_ Plus7_MayaK_2022.pdf" class="documentation__files text text--large text--black text--w-medium" download>
                     Руководство пользователя Plus7 MayaK (cкачать) - PDF
                 </a>
-                <a href="<?php echo ROOT_DIR; ?>/upload/Требования к ПО_Plus7_MayaK.pdf" class="documentation__files text text--large text--black text--w-medium" download>
-                    Требования к ПО Plus7 MayaK (cкачать) - PDF
+                <a href="<?php echo ROOT_DIR; ?>/upload/Информация для установки ПО Plus7 MayaK.pdf" class="documentation__files text text--large text--black text--w-medium" download>
+                    Информация для установки ПО Plus7 MayaK (cкачать) - PDF
                 </a>
                 <div class="documentation__info text text--large text--black text--w-medium">
                     Сведения о стоимости ПО:
